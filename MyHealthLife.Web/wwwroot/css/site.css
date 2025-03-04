@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6fff8;
+    color: #3a8358;
+}
+
+/* Centraliza o conteúdo */
+.text-center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estiliza a logo */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Estiliza o título */
+.auth-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estiliza o subtítulo */
+.auth-subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #3a8358;
+}
+
+/* Botão estilizado */
+.auth-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #3a8358;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .auth-btn:hover {
+        background-color: #2e6245;
+    }

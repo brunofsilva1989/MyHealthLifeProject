@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Login - MyHealthLife";
+}
+
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="logo-container">
+            <img src="~/img/Logo.png" alt="Logo MyHealthLife" class="logo">
+            <h2 class="auth-title">Acesse sua conta</h2>
+        </div>
+
+        <form method="post">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" class="form-control" placeholder="Digite sua senha" required />
+            </div>
+
+            <button type="submit" class="btn auth-btn">Entrar</button>
+
+            <div class="forgot-password">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+        </form>
+    </div>
+</div>

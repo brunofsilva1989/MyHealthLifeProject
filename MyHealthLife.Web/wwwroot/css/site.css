@@ -1,49 +1,192 @@
+/* Fundo da página */
 body {
-    font-family: Arial, sans-serif;
     background-color: #f6fff8;
-    color: #3a8358;
-}
-
-/* Centraliza o conteúdo */
-.text-center {
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* Estiliza a logo */
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
-
-/* Estiliza o título */
-.auth-title {
-    font-size: 2.5em;
-    font-weight: bold;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 
+
+/* Container principal */
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Cartão do login */
+.auth-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Título */
+.auth-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3a8358;
+}
+
+/* Estilizando os campos de entrada */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-size: 14px;
+        color: #3a8358;
+        font-weight: bold;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3a8358;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botão de login */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3a8358;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+    .auth-btn:hover {
+        background-color: #2e6245;
+    }
+
+/* Link "Esqueceu sua senha?" */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+        text-decoration: none;
+        color: #3a8358;
+        font-size: 14px;
+        font-weight: bold;
+}
+
+ .forgot-password a:hover {
+            text-decoration: underline;
+ }
+
+/* Garante que a navbar fique centralizada e espaçada corretamente */
+/*.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}*/
+
+.navbar {
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Evita que a navbar fique muito larga */
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Centraliza a tela inicial corretamente */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 200px); /* Ajuste fino da altura total */
+    margin-top: -80px; /* Eleva a seção um pouco */
+}
+
+/* Ajusta o tamanho da logo */
+.home-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Estiliza o título */
+.home-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #3a8358;
+}
+
 /* Estiliza o subtítulo */
-.auth-subtitle {
+.home-subtitle {
     font-size: 1.2em;
     margin-top: 10px;
     color: #3a8358;
 }
 
-/* Botão estilizado */
-.auth-btn {
-    display: inline-block;
+/* Ajusta o botão "Saiba Mais" */
+.home-btn {
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 25px;
+    font-size: 1.2em;
     color: white;
     background-color: #3a8358;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    transition: background 0.3s ease-in-out;
 }
 
-    .auth-btn:hover {
+    .home-btn:hover {
         background-color: #2e6245;
     }
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 100px); /* Isso evita que a navbar afete o layout */
+    margin-top: 50px;
+}
